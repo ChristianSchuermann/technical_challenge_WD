@@ -7,7 +7,8 @@ function Details(props) {
   return (
     <Link to={`/${id}`}>
       <div className="flex flex-col items-center justify-center">
-      <div className="w-52 m-5  border-2 border-[#888DA7] flex flex-col items-center justify-center ">
+      <div className="w-52 m-5  border-2 border-[#303633] flex flex-col items-center justify-center hover:bg-[#303633] hover:text-[#8BE8CB]
+    duration-500 ">
         <p>{name}</p>
         </div>
       </div>

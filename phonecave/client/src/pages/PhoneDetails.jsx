@@ -29,43 +29,56 @@ function PhoneDetails() {
   }, [id]);
 
   return (
-        <div className="flex flex-col items-center justify-center">
-          <img src={`../images/${imageFileName}`} alt={name} />
-          <h1>{name}</h1>
-          <table>
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td>Manufacturer: </td>
-                <td>{manufacturer}</td>
-              </tr>
-              <tr>
-                <td>Description: </td>
-                <td>{description}</td>
-              </tr>
-              <tr>
-                <td>Color: </td>
-                <td>{color}</td>
-              </tr>
-              <tr>
-                <td>Price: </td>
-                <td>{price} €</td>
-              </tr>
-              <tr>
-                <td>Screen: </td>
-                <td>{screen}</td>
-              </tr>
-              <tr>
-                <td>Processor: </td>
-                <td>{processor}</td>
-              </tr>
-              <tr>
-                <td>RAM:</td>
-                <td>{ram}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      )};
+    <div className="flex flex-col items-center justify-centerß">
+      <img class="object-scale-down h-30 w-60" src={`../images/${imageFileName}`} alt={name} />
+      <div className="text-4xl text-[#303633]">{name}</div>
+      <table
+        class="table-auto"
+        width="100%"
+        border="0"
+        cellpadding="2"
+        cellspacing="1"
+      >
+        <tbody>
+          <br />
+          <tr>
+            <td class="TableLayout">Manufacturer: </td>
+            <td class="TableLayout"> {manufacturer}</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">Description: </td>
+            <td class="TableLayout"> {description}</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">Color: </td>
+            <td class="TableLayout">{color}</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">Price: </td>
+            <td class="TableLayout">{price} €</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">Screen: </td>
+            <td class="TableLayout">{screen}</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">Processor: </td>
+            <td class="TableLayout">{processor}</td>
+          </tr>
+          <br />
+          <tr>
+            <td class="TableLayout">RAM:</td>
+            <td class="TableLayout">{ram}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 export default PhoneDetails;
