@@ -1,23 +1,25 @@
-import logo from "../logo.svg";
+import { useEffect, useState } from "react";
 import "../App.css";
+import Details from "../components/Details";
 
 function HomePage() {
+  const [phones, setPhones] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5005/api/phones`)
+      .then((data) => {
+        data.json().then((phones) => {
+          setPhones(phones);
+        });
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {phones.map((phone, i) => {
+        return <Details key={i} phone={phone} />;
+      })}
     </div>
   );
 }
