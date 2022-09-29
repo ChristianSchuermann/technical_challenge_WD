@@ -1,6 +1,6 @@
-# whispererZ
+# The Phone Cave
 
-![The Phone Cave](https://ibb.co/8PX9VvD)
+![The Phone Cave](https://i.ibb.co/NW7KzD6/Bild-2022-09-29-183857845.png)
 
 ## Getting started:
 In the client directory, you can run:
