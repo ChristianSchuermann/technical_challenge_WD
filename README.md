@@ -17,6 +17,6 @@ In the server directory, you can run:
 ### `nodemon`
 The Server will start on port http://localhost:5005 and connect to Mongo with the Database name: "phonecave"
 
-The App is about showing details from different Phones using a RestAPI.
+### The App is about showing details from different Phones using a RestAPI.
 
-If I had more time I would add more CSS with TailwindCSS.
+### If I had more time I would add more CSS with TailwindCSS.
