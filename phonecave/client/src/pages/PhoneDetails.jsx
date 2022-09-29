@@ -30,7 +30,11 @@ function PhoneDetails() {
 
   return (
     <div className="flex flex-col items-center justify-centerß">
-      <img class="object-scale-down h-30 w-60" src={`../images/${imageFileName}`} alt={name} />
+      <img
+        class="object-scale-down h-30 w-60"
+        src={`../images/${imageFileName}`}
+        alt={name}
+      />
       <div className="text-4xl text-[#303633]">{name}</div>
       <table
         class="table-auto"
